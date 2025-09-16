@@ -6,6 +6,6 @@ import { Component } from "@angular/core";
     styleUrls: ['./app.component.css']
 })
 
-export class Appcomponent{
-    title='Demo-App'
+export class AppComponent{
+    title='Demo-App';
 }

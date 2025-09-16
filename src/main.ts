@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { ApplicationModule, Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { errorContext } from 'rxjs/internal/util/errorContext';
+import { AppComponent } from './app/app.component';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +16,4 @@ export class App {
   name = 'Angular';
 }
 
-bootstrapApplication(App);
+bootstrapApplication(AppComponent).catch(err=>console.error(err));
